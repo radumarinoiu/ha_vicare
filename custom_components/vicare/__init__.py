@@ -104,7 +104,7 @@ async def _async_migrate_entries(
             }
 
         await er.async_migrate_entries(hass, config_entry.entry_id, update_unique_id)
-        config_entry.version = 2
+        hass.config_entries.async_update_entry(entry=config_entry, version=2)
 
         return True
 

@@ -9,3 +9,5 @@ env
 .coverage
 coverage.xml
 .secrets
+
+.idea/
